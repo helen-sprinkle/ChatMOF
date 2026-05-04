@@ -12,7 +12,7 @@ from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.tools.python.tool import PythonAstREPLTool
+from langchain_experimental.tools.python.tool import PythonAstREPLTool
 
 from chatmof.config import config
 from chatmof.utils import search_file

@@ -36,4 +36,7 @@ config = {
     'num_parents': 200,
     'logger': 'generate_mof.log',
     'topologies': ['pcu', 'dia', 'acs', 'rtl', 'cds', 'srs', 'ths', 'bcu', 'fsc'],
+
+    # MOFTransformer backend: 'stub' (dummy data, no ML deps) | 'local' (installed moftransformer)
+    'moftransformer_backend': 'stub',
 }

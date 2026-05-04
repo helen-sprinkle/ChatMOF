@@ -6,8 +6,8 @@ import logging
 from timeout_decorator import timeout
 
 import pormake as pm
-from moftransformer.utils.prepare_data import make_prepared_data
 from chatmof.config import config
+from chatmof.moftransformer_api import get_api
 
 
 pm.log.disable_print()
@@ -63,11 +63,11 @@ class CIFGenerator(object):
                 current_cif = self._generate_cif(cif, topo)
                 current_cif.write_cif(str(save_path))
 
-            is_success = make_prepared_data(
-                save_path, 
-                self.save_dir, 
-                logger=logger, 
-                eg_logger=logger
+            is_success = get_api().prepare_data(
+                save_path,
+                self.save_dir,
+                logger=logger,
+                eg_logger=logger,
             )
 
             if not is_success:

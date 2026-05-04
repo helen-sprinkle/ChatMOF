@@ -8,7 +8,7 @@ from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain
 from langchain.prompts import BasePromptTemplate, PromptTemplate
 from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.agents import create_pandas_dataframe_agent
+from langchain_experimental.agents import create_pandas_dataframe_agent
 
 from chatmof import __root_dir__
 from chatmof.config import config
