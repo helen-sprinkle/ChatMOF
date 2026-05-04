@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()  # loads .env from cwd or any parent directory
+
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI

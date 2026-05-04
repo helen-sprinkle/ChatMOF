@@ -61,3 +61,4 @@ transfer_learning/
 
 # vscode
 .vscode/
+.env
